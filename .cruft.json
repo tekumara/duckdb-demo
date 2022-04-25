@@ -1,0 +1,15 @@
+{
+  "template": "git@github.com:tekumara/python-typed-template.git",
+  "commit": "29dee09e8191ce66f024ea7a5679a03853c037e4",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "repo_name": "duckdb-demo",
+      "package_name": "duckdemo",
+      "distribution_name": "duckdb-demo",
+      "description": "DuckDB Demo",
+      "_template": "git@github.com:tekumara/python-typed-template.git"
+    }
+  },
+  "directory": null
+}
