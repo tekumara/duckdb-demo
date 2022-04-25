@@ -10,7 +10,7 @@ import pyarrow.parquet
 duckdb_conn = duckdb.connect()
 duckdb_conn.execute("PRAGMA threads=4")
 
-parquet_filename = os.path.join(os.path.dirname(os.path.realpath(__file__)), "data", "userdata1.parquet")
+parquet_filename = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../data", "userdata1.parquet")
 
 userdata_parquet_dataset = pyarrow.dataset.dataset(
     [
