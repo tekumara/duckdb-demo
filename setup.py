@@ -9,7 +9,7 @@ setup(
     package_data={
         "": ["py.typed"],
     },
-    install_requires=["duckdb==0.3.2"],
+    install_requires=["duckdb==0.3.3", "pyarrow==7.0.0"],
     extras_require={
         "dev": [
             "autoflake~=1.4",
