@@ -9,7 +9,7 @@ setup(
     package_data={
         "": ["py.typed"],
     },
-    install_requires=[],
+    install_requires=["duckdb==0.3.2"],
     extras_require={
         "dev": [
             "autoflake~=1.4",

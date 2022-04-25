@@ -1,10 +1,10 @@
-import sys
-from typing import List
+# to install: pip install duckdb
+# to download the parquet file:
+# wget https://github.com/cwida/duckdb-data/releases/download/v1.0/taxi_2019_04.parquet
+import duckdb
 
-
-def main(args: List[str] = sys.argv[1:]) -> None:
-    print(f"hello {args[0]}!")
-
-
-if __name__ == "__main__":
-    main()
+print(duckdb.query('''
+SELECT COUNT(*)
+FROM 'taxi_2019_04.parquet'
+WHERE pickup_at BETWEEN '2019-04-15' AND '2019-04-20'
+''').fetchall())
